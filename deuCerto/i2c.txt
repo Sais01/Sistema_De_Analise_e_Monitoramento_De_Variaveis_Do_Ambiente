@@ -1,0 +1,402 @@
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+i2c devices found:1
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+i2c devices found:1
+i2c devices found:1
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+i2c devices found:1
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+No i2c device !
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+No i2c device !
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+i2c devices found:1
+Hexa address: 0x77
+No i2c device !
+
