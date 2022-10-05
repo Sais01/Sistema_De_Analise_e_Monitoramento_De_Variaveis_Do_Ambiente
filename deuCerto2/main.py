@@ -1,9 +1,9 @@
 from umqttsimple import MQTTClient
 import ubinascii
 import machine
-import time
+from time import sleep_ms, time, sleep
 from bmp280 import BME280
-from network import WLAN, STA_IF
+import network
 import dht
 import json
 
@@ -20,9 +20,15 @@ def escreverDados(conteudo):
     texto_escrito.write (conteudo + "\n")
     texto_escrito.close()
 
+escreverDados("oii")
+
 i2c = machine.I2C(scl=machine.Pin(2), sda=machine.Pin(0))
 
+escreverDados("oii 2")
+
 dht11 = dht.DHT11(machine.Pin(1,machine.Pin.IN))#TX
+
+escreverDados("oii 3")
 
 #%%%%% Informações wifi e MQTT %%%%%%%
 ssid = 'SAIS'
@@ -41,8 +47,9 @@ topico_dados = b'bmp/dados'
 last_message = 0
 message_interval = 2
 
+
 def ativaWifi(rede, senha):
-  wifi = WLAN(STA_IF)
+  wifi = network.WLAN(network.STA_IF)
   wifi.active(True)
   if not wifi.isconnected():# Verifica se já estava conectado a uma rede existente
     wifi.connect(rede,senha)
@@ -50,6 +57,7 @@ def ativaWifi(rede, senha):
     while not wifi.isconnected() and tentativas < 10:
       sleep_ms(1000)
       tentativas +=1
+  escreverDados("Conectou")
   return wifi if wifi.isconnected() else None
 
 
@@ -60,19 +68,26 @@ def connect_mqtt():
   return client
 
 def restart_and_reconnect():
-  time.sleep(10)
+  sleep(10)
   machine.reset()
 
-rede = ativaWifi(ssid, password)
-
+try:
+   rede = ativaWifi(ssid, password)
+except:
+   escreverDados('Erro no wifi')
+   
 try:
   client = connect_mqtt()
 except OSError as e:
+  escreverDados("nao conectou")
   restart_and_reconnect()
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+escreverDados("oii 4")
 while True:
+    escreverDados("Rodou!")
     try:
-        if (time.time() - last_message) > message_interval:
+        if (time() - last_message) > message_interval:
             
             pressao = 0
             temperatura_bmp = 0
@@ -98,10 +113,13 @@ while True:
                 for device in devices:  
                     escreverTexto("Hexa address: {}".format(hex(device)))  
             
-            dht11.measure()
-            
-            temperatura_dht = dht11.temperature()
-            umidade = dht11.humidity()
+            try:
+                dht11.measure()
+                
+                temperatura_dht = dht11.temperature()
+                umidade = dht11.humidity()
+            except:
+                escreverDados("Deu ruim")
             
             dados = "\'temperatura_dht\':\'{}\', \'temperatura_bmp\':\'{}\',\'pressao\':\'{}\', \'umidade\':\'{}\'".format(temperatura_dht,temperatura_bmp, pressao,umidade)
             
@@ -116,8 +134,10 @@ while True:
             
             client.publish(topico_dados, data_final)
             
-            last_message = time.time()
+            last_message = time()
     except OSError as e:
         restart_and_reconnect()
     
+
+
 
