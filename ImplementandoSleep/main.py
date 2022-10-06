@@ -40,7 +40,7 @@ topico_dados = b'bmp/dados'
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 #%%%%% Configuracao e inicializacao MQTT e Wifi %%%% 
-futuro = ticks_ms()
+tempo_light_sleep = 10000
 
 def ativaWifi(rede, senha):
   wifi = network.WLAN(network.STA_IF)
@@ -78,50 +78,50 @@ except OSError as e:
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 while True:
-    try:
-        if ticks_diff(ticks_ms(), futuro) > 0:
-            
-            pressao = 0
-            temperatura_bmp = 0
-            temperatura_dht = 0
-            umidade = 0
-            
-            data = dict()
-            
-            devices = i2c.scan()
+    try:            
+        pressao = 0
+        temperatura_bmp = 0
+        temperatura_dht = 0
+        umidade = 0
+        
+        data = dict()
+        
+        devices = i2c.scan()
 
-            if len(devices) == 0:
-                escreverTextoI2C("No i2c device !")
-            else:
-                escreverTextoI2C("i2c devices found:{}".format(len(devices)))
-                bmp = BME280(i2c=i2c)
-                
-                escreverDados("Temperatura:{}".format(bmp.values[0]))
-                temperatura_bmp = bmp.values[0]
-                
-                escreverDados("Pressao:{}".format(bmp.values[1]))
-                pressao = bmp.values[1]
+        if len(devices) == 0:
+            escreverTextoI2C("No i2c device !")
+        else:
+            escreverTextoI2C("i2c devices found:{}".format(len(devices)))
+            bmp = BME280(i2c=i2c)
+            
+            escreverDados("Temperatura:{}".format(bmp.values[0]))
+            temperatura_bmp = bmp.values[0]
+            
+            escreverDados("Pressao:{}".format(bmp.values[1]))
+            pressao = bmp.values[1]
 
-                for device in devices:  
-                    escreverTextoI2C("Hexa address: {}".format(hex(device)))  
+            for device in devices:  
+                escreverTextoI2C("Hexa address: {}".format(hex(device)))  
+        
+        try:
+            dht11.measure()
             
-            try:
-                dht11.measure()
-                
-                temperatura_dht = dht11.temperature()
-                umidade = dht11.humidity()
-            except:
-                escreverDados("Deu ruim")
-                        
-            data["temperatura_dht"] = temperatura_dht
-            data["temperatura_bmp"] = temperatura_bmp
-            data["pressao"] = pressao
-            data["umidade"] = umidade
-                        
-            data_final=json.dumps(data)
-            
-            client.publish(topico_dados, data_final)
-            
-            futuro = ticks_add(ticks_ms(), 5000)
+            temperatura_dht = dht11.temperature()
+            umidade = dht11.humidity()
+        except:
+            escreverDados("Deu ruim")
+                    
+        data["temperatura_dht"] = temperatura_dht
+        data["temperatura_bmp"] = temperatura_bmp
+        data["pressao"] = pressao
+        data["umidade"] = umidade
+                    
+        data_final=json.dumps(data)
+        
+        client.publish(topico_dados, data_final)
+        
+        machine.lightsleep(tempo_light_sleep)
     except OSError as e:
         restart_and_reconnect()
+
+
