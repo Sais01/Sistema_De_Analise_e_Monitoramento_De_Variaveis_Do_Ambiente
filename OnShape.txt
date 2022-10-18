@@ -1,0 +1,4 @@
+Espessura: 1.2mm -> 3, 2, 1
+ângulo: 45
+Altura: 27mm
+bateria: 1,8cm x 6,5cm
